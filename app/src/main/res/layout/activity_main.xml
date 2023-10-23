@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    tools:context=".MainActivity">
+
+
+    <TextView
+        android:id="@+id/titulo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="36dp"
+        android:text="CALCULADORA"
+        android:textSize="30dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="MissingConstraints" />
+
+    <EditText
+        android:id="@+id/cajanum1"
+        android:layout_width="164dp"
+        android:layout_height="45dp"
+        android:layout_marginTop="44dp"
+        android:layout_marginEnd="48dp"
+        android:contentDescription="Ingrese el primer valor"
+        android:ems="10"
+        android:inputType="number"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/titulo"
+        />
+
+    <TextView
+        android:id="@+id/textnum1"
+        android:layout_width="118dp"
+        android:layout_height="24dp"
+        android:layout_marginStart="36dp"
+        android:layout_marginTop="64dp"
+        android:text="Numero 1"
+        android:textAlignment="center"
+        android:textSize="17dp"
+        app:layout_constraintEnd_toStartOf="@+id/cajanum1"
+        app:layout_constraintHorizontal_bias="0.793"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/titulo" />
+
+    <EditText
+        android:id="@+id/cajanum2"
+        android:layout_width="163dp"
+        android:layout_height="42dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="48dp"
+        android:ems="10"
+        android:inputType="number"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/cajanum1"
+        tools:ignore="MissingConstraints" />
+
+
+    <TextView
+        android:id="@+id/textnum2"
+        android:layout_width="115dp"
+        android:layout_height="27dp"
+        android:layout_marginTop="36dp"
+        android:text="Numero 2"
+        android:textAlignment="center"
+        android:textSize="17dp"
+        app:layout_constraintEnd_toStartOf="@+id/cajanum2"
+        app:layout_constraintHorizontal_bias="0.898"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textnum1"
+        tools:ignore="MissingConstraints" />
+
+    <RadioGroup
+        android:id="@+id/radioGroup"
+        android:layout_width="254dp"
+        android:layout_height="47dp"
+        android:layout_marginTop="36dp"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.63"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/cajanum2"
+        tools:ignore="MissingConstraints">
+
+        <RadioButton
+            android:id="@+id/sumar"
+            android:layout_width="126dp"
+            android:layout_height="wrap_content"
+            android:text="Sumar"
+            tools:ignore="MissingConstraints"
+            tools:layout_editor_absoluteX="168dp"
+            tools:layout_editor_absoluteY="284dp" />
+
+        <RadioButton
+            android:id="@+id/restar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Restar"
+            tools:ignore="MissingConstraints"
+            tools:layout_editor_absoluteX="168dp"
+            tools:layout_editor_absoluteY="351dp" />
+
+    </RadioGroup>
+
+    <Button
+        android:id="@+id/buttonCalcular"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="36dp"
+        android:text="Calcular"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/radioGroup"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/labelResultado"
+        android:layout_width="139dp"
+        android:layout_height="27dp"
+        android:layout_marginTop="40dp"
+        android:text="Resultado"
+        android:textAlignment="center"
+        android:textSize="17dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/buttonCalcular"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/resultado"
+        android:layout_width="196dp"
+        android:layout_height="67dp"
+        android:layout_marginTop="4dp"
+        android:ems="10"
+        android:inputType="number"
+        android:textSize="20sp"
+        android:textAlignment="center"
+
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/labelResultado"
+        tools:ignore="MissingConstraints" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
